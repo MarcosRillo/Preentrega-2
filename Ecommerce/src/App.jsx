@@ -1,6 +1,6 @@
 import NavBar from "./components/NavBar/NavBar"
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import ItemCount from "./components/ItemCount/ItemCount";
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 
 function App() {
 
@@ -8,7 +8,7 @@ function App() {
     <>
       <NavBar />
       <ItemListContainer greeting={"La Caballeriza"}/>
-      <ItemCount initial={1} stock={10}/>
+      <ItemDetailContainer />
     </>
   )
 }
