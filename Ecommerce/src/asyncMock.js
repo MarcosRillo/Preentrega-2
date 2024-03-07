@@ -45,3 +45,11 @@ export const getProductsById = (productId) => {
         }, 500);
     })
 }
+
+export const getProductsByCategory = (productCategory) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(platos.find(prod => prod.category === productCategory))
+        }, 500);
+    })
+}
