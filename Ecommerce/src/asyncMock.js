@@ -30,7 +30,7 @@ const platos = [
     },
     {
         id: '4',
-        name: 'Pechuga de Pollo a la Parrilla',
+        name: 'Pollo a la Parrilla',
         price: 9500,
         category: 'principales',
         img: pictures.pechugaImg,
@@ -84,7 +84,7 @@ const platos = [
     },
     {
         id: '10',
-        name: 'Empanadas de Queso y Jamón',
+        name: 'Empanadas',
         price: 7500,
         category: 'entradas',
         img: pictures.empanadasImg,

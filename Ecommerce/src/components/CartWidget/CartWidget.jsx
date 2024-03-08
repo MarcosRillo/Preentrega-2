@@ -2,7 +2,7 @@ import cart from './assets/cart.svg'
 
 const CartWidget = () => {
   return (
-    <div>
+    <div className='navbar-brand'>
         <img src={cart} alt="icon-carrito" />
         0
     </div>

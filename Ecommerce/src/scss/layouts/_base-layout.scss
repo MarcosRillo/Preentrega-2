@@ -1,0 +1,83 @@
+$header-bg-color: $color-gray-800;
+$header-border-color: $color-gray-900;
+
+$footer-bg-color: transparent;
+$footer-text-color: $body-text-color;
+
+.base {
+    &-layout {
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &-header {
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9000;
+        position: fixed;
+        box-shadow: 0 0 1em -0.125em rgba(10, 10, 10, 10%),
+                    0 0 1px rgba(10, 10, 10, 2%);
+
+        border-bottom: 1px solid $header-border-color;
+        background-color: $header-bg-color;
+    }
+
+    &-content {
+        flex: 1;
+        position: relative;
+        margin-top: 10vh;
+        display: flex;
+        justify-content: center;
+        .index__section {
+            @include flex (column, center, center, 50px);
+            width: 100%;
+            text-align: center;
+            p {
+                text-shadow: $shadow-md;
+                color: $color-secondary;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    color: $color-secondary-hover;
+                }
+            }
+
+            &-links {
+                @include flex (row, center, center, 12.5rem);
+                margin-top: 4rem;
+                li {
+                    list-style: none;
+                    font-size: $font-4xl;
+                    a {
+                        font-weight: $font-semibold;
+                        font-family: $font-primary;
+                        color: $color-primary;
+
+                        &:hover {
+                            color: $color-primary-hover;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+
+    &-footer {
+        background-color: $footer-bg-color;
+        @include flex (row, center, end, 20px);
+        .footer-ul {
+            @include flex (row, center, end, 60px);
+            li {
+                list-style: none;
+                a {
+                    img {
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

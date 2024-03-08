@@ -3,14 +3,14 @@ import { NavLink, Link } from "react-router-dom"
 
 const NavBar = () => {
     return (
-        <nav>
+        <nav className="navbar">
             <Link to='/'>
-            <h3>Ecommerce</h3>
+            <h3 className="link">Home</h3>
             </Link>
-            <div>
-                <NavLink to={`/category/entradas`}>Entradas</NavLink>
-                <NavLink to={`/category/principales`}>Principales</NavLink>
-                <NavLink to={`/category/bebidas`}>Bebidas</NavLink>
+            <div className="navbar-links">
+                <NavLink to={`/category/entradas`} className={'link'}>Entradas</NavLink>
+                <NavLink to={`/category/principales`} className={'link'}>Principales</NavLink>
+                <NavLink to={`/category/bebidas`} className={'link'}>Bebidas</NavLink>
             </div>
             <CartWidget />
         </nav>
