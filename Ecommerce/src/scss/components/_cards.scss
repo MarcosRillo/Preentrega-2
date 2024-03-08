@@ -1,0 +1,32 @@
+$card-bg: transparent;
+$card-radius: #{12px};
+
+.card {
+    overflow: hidden;
+    position: relative;
+    transition: all .3s ease;
+    box-shadow: $shadow-lg;
+    border-radius: $card-radius;
+    background-color: $card-bg;
+    text-align: center;
+
+    &:hover {
+        box-shadow: $shadow-md;
+    }
+
+    &-content {
+        padding: 24px 18px;
+    }
+
+    &-title {
+        font-size: $font-2xl;
+        font-weight: $font-bold;
+        margin-bottom: 24px;
+        color: $body-text-color;
+    }
+
+    &-img {
+        width: 100%;
+        height: auto;
+    }
+}

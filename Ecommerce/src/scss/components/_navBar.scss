@@ -1,0 +1,14 @@
+.navbar {
+    height: 64px;
+    padding: 8px 16px;
+    @include flex (row, space-between, center, 1rem);
+
+    &-brand {
+        height: 3.75rem;
+    }
+
+    &-links {
+        @include flex (row, center, center, 1rem);
+        color: $heading-text-color;
+    }
+}

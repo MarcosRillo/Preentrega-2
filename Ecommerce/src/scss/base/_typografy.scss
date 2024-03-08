@@ -1,0 +1,59 @@
+h1, h2, h3, h4, h5, h6 {
+    color: $heading-text-color;
+    font-weight: $font-medium;
+    line-height: $leading-tight;
+    font-family: $font-secondary;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h1 {
+    margin: 32px 0;
+    font-size: $font-6xl;
+}
+
+h2 {
+    margin: 0 auto;
+    font-size: $font-5xl;
+    text-align: center;
+}
+
+h3 {
+    margin: 24px 0;
+    font-size: $font-4xl;
+}
+
+h4 {
+    margin: 20px 0;
+    font-size: $font-3xl;
+}
+
+h5 {
+    margin: 18px 0;
+    font-size: $font-2xl;
+}
+
+h6 {
+    margin: 16px 0;
+    font-size: $font-xl;
+}
+
+p {
+    color: $body-text-color;
+    margin: 16px 0;
+    font-weight: $font-normal;
+    font-size: $font-xl;
+
+    &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
