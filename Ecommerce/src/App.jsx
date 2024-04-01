@@ -5,12 +5,15 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import './App.css'
 import './scss/style.scss'
 
+import {CartProvider} from './components/context/cartContext'
+
 
 function App() {
 
   return (
     <div>
       <BrowserRouter>
+      <CartProvider>
         <NavBar />
         <Routes>
           <Route path='/' element={<ItemListContainer greeting={"La Caballeriza"}/>}/>
@@ -18,6 +21,7 @@ function App() {
           <Route path='/item/:itemId' element={ <ItemDetailContainer />} />
           <Route path='*' element={<h1>404 NOT FOUND</h1>} />
         </Routes>
+      </CartProvider>
       </BrowserRouter>
     </div>
   )
